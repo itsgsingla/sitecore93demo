@@ -1,0 +1,108 @@
+﻿@using Demo93.Feature.Navigation
+@using Demo93.Feature.Navigation.Models
+@model HeaderModel
+
+@if (Model != null)
+{
+<div class="header_wrapper">
+    <div class="header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="span6 hidden-phone">
+                        <p>
+                            FREE SHIPPING on coffee when you spend $50 or more! <a href="https://www.greenstreetcoffee.com/product-category/coffee/">SHOP NOW!</a>
+                        </p>
+                    </div>
+                    <div class="span6">
+                        <ul class="inline pull-right">
+
+
+                            <li><a href="https://www.greenstreetcoffee.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fwww.greenstreetcoffee.com%2Fmy-account&amp;_wpnonce=45f4dd910f" title="Login / Register">Login / Register</a></li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="span8">
+                        <div class="logo">
+                            <a href="@Model.LogoUrl" title="←Back home">
+                                <img style="  " src="@Model.LogoImageUrl" alt="Greenstreet">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="row-fluid">
+                            <div class=" span8 offset2">
+                                <!-- Search -->
+                                <div class="search">
+                                    <div class="qs_s">
+                                        <form method="get" action="https://www.greenstreetcoffee.com" role="search">
+                                            <input type="text" name="s" id="query" placeholder="Search…" autocomplete="off" value="">
+                                            <input type="submit" value="Search" id="searchsubmit">
+                                            <input type="hidden" value="product" name="post_type">
+                                        </form>
+                                        <!-- Autocomplete results -->
+                                        <div id="autocomplete-results">
+                                        </div>
+                                        <!-- End id="autocomplete-results" -->
+
+                                    </div>
+                                </div>
+                                <!-- End class="search"-->
+                            </div>
+
+                            <div class="span2">
+                                <!-- Mini cart -->
+                                <div class="mini-cart">
+                                    <a href="https://www.greenstreetcoffee.com/cart" title="Cart">
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                                <!-- End class="mini-cart" -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navigation visible-desktop">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <a href="#" class="main-menu-button">Navigation</a>
+                    <!-- Begin Menu Container -->
+                    <div class="megamenu_container">
+                        <div class="menu-sidebar-container">
+
+                            <ul id="menu-sidebar" class="main-menu">
+                                @foreach (var nav in Model.NavigationLinks)
+                                {
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children megamenu-heading">
+                                    <a href="@nav.Link">
+                                        @Html.Sitecore().Field(Template.NavigationLinks.Fields.Name.ToString(), nav.Item)
+                                    </a>
+                                    @Html.Partial("~/Views/Demo93/Navigation/_HeaderPartial.cshtml", nav.Children)
+                                </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+}

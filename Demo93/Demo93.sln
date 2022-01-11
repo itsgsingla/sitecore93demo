@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1758
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{C7275E3D-FB78-4071-8C87-AFA496EB959B}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile-ci.js = gulpfile-ci.js
+		gulpfile.js = gulpfile.js
+		NuGet.config = NuGet.config
+		package.json = package.json
+		publishsettings.targets = publishsettings.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{CB8371B4-A8F7-41E4-94D1-AD3F81A0F373}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{AEBE382B-BDBE-41E4-9CB5-AB1D10319448}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{BED42B84-D4EB-4ECC-9FCF-3806E281096C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{862725F1-439A-41A2-9E60-168520D3AEC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo93.Feature.Navigation", "src\Feature\Navigation\code\Demo93.Feature.Navigation.csproj", "{4ED24053-1599-4EC5-BC0D-F8695718009D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo93.Project.Website", "src\Project\Website\code\Demo93.Project.Website.csproj", "{0348CC4C-B90B-4051-8367-DDE631B717BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{5C6894CD-B140-451A-A633-BE70F7DAEBA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo93.Foundation.Helpers", "src\Foundation\Helpers\code\Demo93.Foundation.Helpers.csproj", "{DAAD7790-4A22-4C87-88A8-824F7D5421EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Theming", "Theming", "{85C9C6E4-EE0D-4BFB-9807-D7A60687194C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo93.Foundation.Theming", "src\Foundation\Theming\code\Demo93.Foundation.Theming.csproj", "{E1AED98A-D0E9-47B2-84D1-CF5A3DC27CCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PageContent", "PageContent", "{74FE9CC0-6BC6-4031-BA11-A39A51F0B434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo93.Feature.PageContent", "src\Feature\PageContent\code\Demo93.Feature.PageContent.csproj", "{1A6D551E-ABB5-4357-AE58-808E077CB277}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ED24053-1599-4EC5-BC0D-F8695718009D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED24053-1599-4EC5-BC0D-F8695718009D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED24053-1599-4EC5-BC0D-F8695718009D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED24053-1599-4EC5-BC0D-F8695718009D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0348CC4C-B90B-4051-8367-DDE631B717BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0348CC4C-B90B-4051-8367-DDE631B717BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0348CC4C-B90B-4051-8367-DDE631B717BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0348CC4C-B90B-4051-8367-DDE631B717BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAAD7790-4A22-4C87-88A8-824F7D5421EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAD7790-4A22-4C87-88A8-824F7D5421EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAD7790-4A22-4C87-88A8-824F7D5421EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAD7790-4A22-4C87-88A8-824F7D5421EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1AED98A-D0E9-47B2-84D1-CF5A3DC27CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1AED98A-D0E9-47B2-84D1-CF5A3DC27CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1AED98A-D0E9-47B2-84D1-CF5A3DC27CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1AED98A-D0E9-47B2-84D1-CF5A3DC27CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6D551E-ABB5-4357-AE58-808E077CB277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6D551E-ABB5-4357-AE58-808E077CB277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6D551E-ABB5-4357-AE58-808E077CB277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6D551E-ABB5-4357-AE58-808E077CB277}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{862725F1-439A-41A2-9E60-168520D3AEC0} = {CB8371B4-A8F7-41E4-94D1-AD3F81A0F373}
+		{4ED24053-1599-4EC5-BC0D-F8695718009D} = {862725F1-439A-41A2-9E60-168520D3AEC0}
+		{0348CC4C-B90B-4051-8367-DDE631B717BA} = {BED42B84-D4EB-4ECC-9FCF-3806E281096C}
+		{5C6894CD-B140-451A-A633-BE70F7DAEBA9} = {AEBE382B-BDBE-41E4-9CB5-AB1D10319448}
+		{DAAD7790-4A22-4C87-88A8-824F7D5421EC} = {5C6894CD-B140-451A-A633-BE70F7DAEBA9}
+		{85C9C6E4-EE0D-4BFB-9807-D7A60687194C} = {AEBE382B-BDBE-41E4-9CB5-AB1D10319448}
+		{E1AED98A-D0E9-47B2-84D1-CF5A3DC27CCC} = {85C9C6E4-EE0D-4BFB-9807-D7A60687194C}
+		{74FE9CC0-6BC6-4031-BA11-A39A51F0B434} = {CB8371B4-A8F7-41E4-94D1-AD3F81A0F373}
+		{1A6D551E-ABB5-4357-AE58-808E077CB277} = {74FE9CC0-6BC6-4031-BA11-A39A51F0B434}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A1DB48A-928C-43D1-BF18-9B989D0411B9}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿[
+  {
+    "outputFileName": "Assets/css/main.min.css",
+    "inputFiles": [
+      "Assets/css/bootstrap.css",
+      "Assets/css/bootstrap-responsive.css",
+      "Assets/css/turquoise.css"
+    ]
+  },
+  {
+    "outputFileName": "Assets/scripts/main.min.js",
+    "inputFiles": [
+      "Assets/scripts/jquery.min.js",
+      "Assets/scripts/navigation.js"
+    ]
+  }
+]

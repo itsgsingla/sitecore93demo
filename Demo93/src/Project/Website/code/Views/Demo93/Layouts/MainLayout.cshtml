@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+
+<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("_Style")
+</head>
+<body>
+    <div class="wrapper">
+        @Html.Sitecore().Placeholder("Header")
+        @Html.Sitecore().Placeholder("Main")
+        @Html.Sitecore().Placeholder("Footer")
+    </div>
+    @Html.Partial("_Script")
+</body>
+</html>
